@@ -7,9 +7,11 @@ from math import ceil
 decoder = re.compile(r".*?solution_s([0-9]+)_f([0-9]+)_ci([0-9]+)_co([0-9]+).*?")
 namer = re.compile(r".*?([a-zA-Z0-9]+)/solution.*?")
 
-workingdir = Path("/u/jyoustra/scratch/hls_testbench")
+workingdir = Path(".")
 
 accel_dir = workingdir / "accelerators"
+
+assert (accel_dir.exists())
 
 dictlist = []
 

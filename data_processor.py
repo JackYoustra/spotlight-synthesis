@@ -20,10 +20,11 @@ static = re.compile(r"Static.*?([0-9.]+)\s*\|", re.DOTALL)
 numparser = re.compile(r"([0-9.]+)")
 
 
-workingdir = Path("/u/jyoustra/scratch/hls_testbench")
+workingdir = Path(".")
 
 synth_projectdir = workingdir / "synthesized_projects"
 hlsdir = synth_projectdir / "hls"
+assert (hlsdir.exists())
 vivadodir = synth_projectdir / "vivado"
 
 dictlist = []

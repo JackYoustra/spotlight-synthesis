@@ -17,7 +17,7 @@ assert (hls_solution_root.exists())
 vivado_solution_root = scratch_solution_root / "vivado"
 assert (vivado_solution_root.exists())
 
-accelerator_locations = Path('/u/jyoustra/scratch/hls_testbench/accelerators')
+accelerator_locations = Path('./accelerators')
 assert (accelerator_locations.exists())
 
 parser = ap.ArgumentParser("Runs vivado test script")
